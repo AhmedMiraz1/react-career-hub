@@ -1,5 +1,5 @@
 
-
+import PropTypes from 'prop-types';
 const Category = ({category}) => {
 
     const {logo,category_name,availability}= category
@@ -15,5 +15,8 @@ const Category = ({category}) => {
         </div>
     );
 };
+Category.propTypes ={
+    category:PropTypes.object.isRequired
+}
 
 export default Category;

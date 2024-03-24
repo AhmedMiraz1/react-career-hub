@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
-import JobDetails from "../JobDetails/JobDetails";
 import JobCart from "../JobCart/JobCart";
 
 const AppliedJobs = () => {
@@ -43,8 +42,8 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <h1 className="text-2xl text-center my-20">
-        Applied Jobs:{appliedJobs.length}
+      <h1 className="text-5xl text-center my-20 font-extrabold">
+        Applied Jobs : {appliedJobs.length}
       </h1>
       <div className="flex justify-end">
         <details className="dropdown mb-20">

@@ -2,7 +2,7 @@ import image from "../../assets/social.png";
 
 const Footer = () => {
   return (
-    <footer className="p-10 bg-[#1A1919] text-[#FFFFFF]">
+    <footer className="p-10 bg-[#1A1919] text-[#FFFFFF] mb-0">
       <div className="container mx-auto px-8  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-between">
         <nav className="flex flex-col">
           <h6 className=" text-[#FFFFFF] font-extrabold text-3xl">CareerHub</h6>

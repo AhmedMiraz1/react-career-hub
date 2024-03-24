@@ -1,6 +1,7 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 
 const Job = ({ job }) => {
@@ -25,4 +26,7 @@ const Job = ({ job }) => {
   );
 };
 
+Job.propTypes={
+job:PropTypes.object.isRequired
+}
 export default Job;

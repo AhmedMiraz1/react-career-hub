@@ -1,5 +1,6 @@
 import { IoLocationOutline } from "react-icons/io5";
 import { HiOutlineCurrencyDollar } from "react-icons/hi2";
+import PropTypes from 'prop-types';
 
 const JobCart = ({ jobCart }) => {
   const { logo, job_title, company_name,remote_or_onsite,job_type,salary, location} = jobCart;
@@ -32,5 +33,9 @@ const JobCart = ({ jobCart }) => {
     </div>
   );
 };
+
+JobCart.propTypes ={
+    jobCart:PropTypes.object.isRequired
+}
 
 export default JobCart;
