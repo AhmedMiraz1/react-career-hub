@@ -45,7 +45,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn text-white font-semibold text-2xl hidden lg:flex bg-[#7E90FE]">Star Applying</a>
+        <a className="  rounded-xl px-3 py-2 lg:px-6 lg:py-4 text-white font-light lg:font-semibold text-base lg:text-2xl  bg-[#7E90FE]">Star Applying</a>
       </div>
     </div>
   );
