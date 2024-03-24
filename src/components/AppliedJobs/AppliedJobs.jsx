@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
 import JobCart from "../JobCart/JobCart";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 
 const AppliedJobs = () => {
   const jobs = useLoaderData();
@@ -26,7 +28,7 @@ const AppliedJobs = () => {
 
   useEffect(() => {
     const storedJobIds = getStoredJobApplication();
-    if (jobs.length > 0) {
+    if (jobs.length> 0) {
       // const jobsApplied =jobs.filter(job => storedJobIds.includes(job.id))
       const jobsApplied = [];
       for (const id of storedJobIds) {
@@ -42,13 +44,13 @@ const AppliedJobs = () => {
 
   return (
     <div>
-      <h1 className="text-5xl text-center my-20 font-extrabold">
+      <h1 className="text-xl lg:text-5xl text-center my-10 lg:my-20 font-extrabold">
         Applied Jobs : {appliedJobs.length}
       </h1>
       <div className="flex justify-end">
         <details className="dropdown mb-20">
-          <summary className="m-1 btn">Filter By</summary>
-          <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+          <summary className="m-1 btn">Filter By  <span className="text-3xl"><RiArrowDropDownLine /></span></summary>
+          <ul className="p-2 shadow menu dropdown-content z-[1] rounded-box w-52">
             <li onClick={() => handelJobsFilter("all")}>
               <a>All</a>
             </li>
@@ -65,16 +67,9 @@ const AppliedJobs = () => {
         {
         displayJobs.map(jobCart => <JobCart key={jobCart.id} jobCart={jobCart}></JobCart>  )
         
-        
         }
       </div>
-      {/* <div>
-        {appliedJobs.map((jobCart, idx) => (
-          <JobDetails key={idx}
-          jobCart={jobCart}
-          ></JobDetails>
-        ))}
-      </div> */}
+
     </div>
   );
 };

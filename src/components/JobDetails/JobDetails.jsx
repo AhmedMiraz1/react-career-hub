@@ -21,36 +21,36 @@ const JobDetails = () => {
   };
   return (
     <div>
-      <div className="mb-32">
-        <h2 className="text-4xl font-extrabold text[#1A1919] text-center my-28"> Job Details</h2>
+      <div >
+        <h2 className="text-2xl lg:text-5xl font-semibold lg:font-extrabold text[#1A1919] text-center my-14 lg:my-28"> Job Details</h2>
         <div className="grid gap-4 grid-cols-1 lg:grid-cols-4">
           <div className=" grid lg:col-span-3">
             <h1 className="font-extrabold text-[#1A1919]">
               Job Description:{" "}
               <span className="font-normal">{job.job_description}</span>
             </h1>
-            <p className="font-extrabold text-[#1A1919] my-6">
+            <p className=" font-medium lg:font-extrabold text-[#1A1919] my-6">
               Job Responsibility:
               <span className="font-normal">{job.job_responsibility}</span>
             </p>
-            <p className="font-extrabold text-[#1A1919]">
+            <p className="font-medium lg:font-extrabold text-[#1A1919]">
               Educational Requirements:
             </p>
             <p className="mb-6">{job.educational_requirements}</p>
-            <p className="font-extrabold text-[#1A1919]">Experiences:</p>
+            <p className=" font-medium  lg:font-extrabold text-[#1A1919]">Experiences:</p>
             <p>{job.experiences}</p>
           </div>
           <div>
-            <div className="bg-[#7E90FE1A] p-8 rounded-2xl">
-              <h2 className="text-2xl  font-extrabold text-[#1A1919]">
+            <div className="bg-[#7E90FE1A] p-4 lg:p-8 rounded-2xl">
+              <h2 className="text-2xl  font-medium lg:font-extrabold text-[#1A1919]">
                 Job Details
               </h2>
-              <hr className="my-6" />
+              <hr className=" my-3 lg:my-6" />
               <div className="flex gap-2 items-center">
                 <p className="w-6  text-[#7E90FE]">
                   <AiOutlineDollar />
                 </p>
-                <p className="text-[#474747] font-extrabold text-xl">
+                <p className="text-[#474747] font-medium lg:font-extrabold text-xl">
                   Salary : <span className="text[#757575]">{job.salary}</span>
                 </p>
               </div>
@@ -58,12 +58,12 @@ const JobDetails = () => {
                 <p className="w-6  text-[#7E90FE]">
                   <TbRadio />
                 </p>
-                <p className="text-[#474747] font-extrabold text-xl mt-4 mb-7">
+                <p className="text-[#474747] font-medium lg:font-extrabold text-xl mt-4 mb-7">
                   Job Title:
                   <span className="text[#757575]">{job.job_title}</span>
                 </p>
               </div>
-              <h2 className="text-[#1A1919] text-xl font-extrabold">
+              <h2 className="text-[#1A1919] text-xl font-medium lg:font-extrabold">
                 Contact Information
               </h2>
               <hr className="my-6" />
@@ -71,7 +71,7 @@ const JobDetails = () => {
                 <p className="w-6  text-[#7E90FE]">
                   <CiPhone />
                 </p>
-                <p className="text-xl font-bold text-[#474747]">
+                <p className="text-xl font-normal lg:font-bold text-[#474747]">
                   Phone :{" "}
                   <span className="text-[#757575)]">
                     {job.contact_information.phone}
@@ -82,7 +82,7 @@ const JobDetails = () => {
                 <p className="w-6  text-[#7E90FE]">
                   <MdOutlineMarkEmailUnread />
                 </p>
-                <p className="text-xl font-bold text-[#474747] my-4">
+                <p className="text-xl font-normal lg:font-bold text-[#474747] my-4">
                   Email :{" "}
                   <span className="text-[#757575)]">
                     {job.contact_information.email}
@@ -93,7 +93,7 @@ const JobDetails = () => {
                 <p className="w-6  text-[#7E90FE]">
                   <IoLocationOutline />
                 </p>
-                <p className="text-xl font-bold text-[#474747]">
+                <p className="text-xl font-normal lg:font-bold text-[#474747]">
                   Address :{" "}
                   <span className="text-[#757575)]">
                     {job.contact_information.address}
@@ -103,7 +103,7 @@ const JobDetails = () => {
             </div>
             <button
               onClick={handelApplyJob}
-              className="btn btn-primary w-full mt-6 text-[#FFFFFF] font-extrabold text-xl"
+              className="btn btn-primary w-full my-6 text-[#FFFFFF] font-medium lg:font-extrabold text-xl"
             >
               Apply Now{" "}
             </button>
