@@ -1,12 +1,21 @@
+import banner from '../../assets/user.png'
+
+
 const Banner = () => {
   return (
-    <div className="text-center">
-      <h2 className="text-5xl ">
-        One Step <br /> Closer To Your <br /> Dream Job
+    <div className="flex justify-between items-center mb-32 mt-10">
+     <div>
+     <h2 className="text-7xl font-extrabold text-[#1A1919] ">
+        One Step <br /> Closer To Your <br /> <span className='text-[#9873FF]'>Dream Job</span>
       </h2>
-      Explore thousands of job opportunities with all the information you need.
+     <p className='my-6 text-[#757575] font-medium text-lg'> Explore thousands of job opportunities with all the information you need.
       Its your future. Come find it. Manage all your job application from start
-      to finish.
+      to finish.</p>
+      <button className='text-white bg-[#7E90FE] px-7 py-5 rounded-2xl text-2xl'>Get Started</button>
+     </div>
+     <div>
+      <img src={banner} alt="" />
+     </div>
     </div>
   );
 };

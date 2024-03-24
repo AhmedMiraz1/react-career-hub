@@ -3,15 +3,15 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   const links = (
     <>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/jobs">Jobs</NavLink></li>
-      <li><NavLink to="/Statistics">Statistics</NavLink></li>
-      <li><NavLink to="/Applied">Applied Jobs</NavLink></li>
-      <li><NavLink to="/Blog">Blog</NavLink></li>
+      <li className="font-bold text-[#7E90FE]"><NavLink to="/">Home</NavLink></li>
+      <li className="font-bold text-[#7E90FE]"><NavLink to="/jobs">Jobs</NavLink></li>
+      <li className="font-bold text-[#7E90FE]"><NavLink to="/Statistics">Statistics</NavLink></li>
+      <li className="font-bold text-[#7E90FE]"><NavLink to="/Applied">Applied Jobs</NavLink></li>
+      <li className="font-bold text-[#7E90FE]"><NavLink to="/Blog">Blog</NavLink></li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar ">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -37,7 +37,7 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">CareerHub</a>
+        <a className="btn btn-ghost text-3xl font-extrabold">CareerHub</a>
       </div>
       <div className="navbar-center hidden lg:flex ">
         <ul className="menu menu-horizontal px-1">
@@ -45,7 +45,7 @@ const Header = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn bg-primary">Star Applying</a>
+        <a className="btn text-white font-semibold text-2xl bg-[#7E90FE]">Star Applying</a>
       </div>
     </div>
   );
