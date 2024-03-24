@@ -40,7 +40,7 @@ const AppliedJobs = () => {
       setAppliedJobs(jobsApplied);
       setDisplayJobs(jobsApplied);
     }
-  }, []);
+  }, [jobs]);
 
   return (
     <div>
