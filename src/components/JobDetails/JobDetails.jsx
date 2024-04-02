@@ -8,6 +8,7 @@ import { TbRadio } from "react-icons/tb";
 import { CiPhone } from "react-icons/ci";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
+import { Helmet } from "react-helmet-async";
 
 const JobDetails = () => {
   const jobs = useLoaderData();
@@ -18,9 +19,13 @@ const JobDetails = () => {
   const handelApplyJob = () => {
     saveJobApplication(idInt);
     toast(" you added successfully ");
+
   };
   return (
     <div>
+      <Helmet>
+           <title>Career Hub | {id}</title>
+           </Helmet>
       <div >
         <h2 className="text-2xl lg:text-5xl font-semibold lg:font-extrabold text[#1A1919] text-center my-14 lg:my-28"> Job Details</h2>
         <div className="grid gap-4 grid-cols-1 lg:grid-cols-4">

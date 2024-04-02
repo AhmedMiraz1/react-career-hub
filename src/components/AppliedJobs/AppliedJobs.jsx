@@ -3,6 +3,7 @@ import { useLoaderData } from "react-router-dom";
 import { getStoredJobApplication } from "../../utility/localStorage";
 import JobCart from "../JobCart/JobCart";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { Helmet } from "react-helmet-async";
 
 
 const AppliedJobs = () => {
@@ -44,6 +45,9 @@ const AppliedJobs = () => {
 
   return (
     <div>
+      <Helmet>
+           <title>Career Hub | Applied jobs</title>
+           </Helmet>
       <h1 className="text-xl lg:text-5xl text-center my-10 lg:my-20 font-extrabold">
         Applied Jobs : {appliedJobs.length}
       </h1>

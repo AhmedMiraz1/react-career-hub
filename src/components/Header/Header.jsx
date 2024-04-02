@@ -1,13 +1,13 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   const links = (
     <>
-      <li className="font-bold text-[#7E90FE]"><NavLink to="/">Home</NavLink></li>
-      <li className="font-bold text-[#7E90FE]"><NavLink to="/jobs">Jobs</NavLink></li>
-      <li className="font-bold text-[#7E90FE]"><NavLink to="/Statistics">Statistics</NavLink></li>
-      <li className="font-bold text-[#7E90FE]"><NavLink to="/Applied">Applied Jobs</NavLink></li>
-      <li className="font-bold text-[#7E90FE]"><NavLink to="/Blog">Blog</NavLink></li>
+      <li className="font-bold text-[#7E90FE] text-xl"><NavLink to="/">Home</NavLink></li>
+      <li className="font-bold text-[#7E90FE] text-xl"><NavLink to="/jobs">Jobs</NavLink></li>
+      <li className="font-bold text-[#7E90FE] text-xl"><NavLink to="/Statistics">Statistics</NavLink></li>
+      <li className="font-bold text-[#7E90FE] text-xl"><NavLink to="/Applied">Applied Jobs</NavLink></li>
+      <li className="font-bold text-[#7E90FE] text-xl"><NavLink to="/Blog">Blog</NavLink></li>
     </>
   );
   return (
@@ -37,10 +37,10 @@ const Header = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl lg:text-3xl font-semibold lg:font-extrabold">CareerHub</a>
+        <Link to ='/' className="btn btn-ghost text-xl lg:text-3xl font-semibold lg:font-extrabold">CareerHub</Link>
       </div>
       <div className="navbar-center hidden lg:flex ">
-        <ul className="menu menu-horizontal px-1">
+        <ul className="menu menu-horizontal gap-8 px-1">
           {links}
         </ul>
       </div>

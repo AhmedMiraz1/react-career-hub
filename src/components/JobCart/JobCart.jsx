@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 const JobCart = ({ jobCart }) => {
   const { logo, job_title, company_name,remote_or_onsite,job_type,salary, location} = jobCart;
 
-  console.log(jobCart);
+
   return (
     <div>
       <div className="flex flex-col lg:flex-row justify-between items-center border my-7 p-8 rounded-xl">
